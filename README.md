@@ -14,3 +14,5 @@ D. Policy - Can be displayed on touch screens around PPW department (accessible 
 first major 3 parts of the project: Home/Sample Schedule section, Requirement section, and 
 Recommended Courses section. Our goal is to get content together and start playing around with the
 styling.
+
+Website using the checklist style: https://www.w3schools.com/code/tryit.asp?filename=G9C8LGH08ULJ
