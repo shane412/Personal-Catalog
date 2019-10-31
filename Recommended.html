@@ -42,7 +42,9 @@
       <h1>Recommended Courses</h1>
     </div>
   </header>
-
+    
+    
+    
   <section id="about">
     <div class="container">
       <div class="row">
@@ -50,30 +52,148 @@
           <h2>Trying to decide what courses to take?</h2>
           <p class="lead">Use the interactive drop downs to let the virtual advisor know what kind of class you're looking for.</p>
             <p class="lead">What requirement do you need to fill?</p>
-    
             
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Requirement
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Prerequisite</a>
-                    <a class="dropdown-item" href="#">Core Course</a>
-                    <a class="dropdown-item" href="#">1000 Level Course</a>
-                    <a class="dropdown-item" href="#">Elective</a>
-                </div>
-            </div>
-            <p class="lead">What do you hope to get out of the class?</p>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Purpose
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">I just want to fulfill the requirement.</a>
-                    <a class="dropdown-item" href="#">I would like to take a highly rated course.</a>
-                    <a class="dropdown-item" href="#">I want the class to be interesting.</a>
-                </div>
-            </div>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#prereq">Prerequisite</button>
+            <!-- Modal -->
+            <div class="modal fade" id="prereq" tabindex="-1" role="dialog" aria-labelledby="prereqTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="prereqTitle">Prerequisite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>ENGCMP 0200 Seminar in Composition</p>
+        <p>ENGCMP 0203 Seminar in Comp: Gender Studies</p>
+        <p>ENGCMP 0205 Seminar in Composition: Film</p> 
+        <p>ENGCMP 0207 Seminar in Composition: Education</p> 
+        <p>ENGCMP 0208 Seminar in Comp: Service-Learning</p> 
+        <p>ENGCMP 0210 Seminar in Comp: Writing with Film</p> 
+        <p>FP 0003 First-Year Seminar</p> 
+        <p>FP 0006 First-Year Seminar</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#core">Core Course</button>
+            <!-- Modal -->
+            <div class="modal fade" id="core" tabindex="-1" role="dialog" aria-labelledby="coreTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="coreTitle">Core Courses</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>ENGCMP 0420 Writing for the Public</p>
+        <p>ENGCMP 0560 Writing Arguments</p>
+        <p>ENGCMP 1551 History and Politics of English Language</p>
+        <p>ENGCMP 1900 PPW Internship or ENGCMP 1901 UTA: Teaching or Tutoring Writing</p>
+        <p>ENGCMP 1910 Senior Seminar</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>     
+                           
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#thousandlevel">1000 Level Course</button>
+            <!-- Modal -->
+            <div class="modal fade" id="thousandlevel" tabindex="-1" role="dialog" aria-labelledby="thousandlevelTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="thousandlevelTitle">1000 Level Course</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>ENGCMP 1099 The Language Of Policy And Power: Topics In Diversity </p>
+          <p>ENGCMP 1100 Language Of Business And Industry </p>
+          <p>ENGCMP 1101 Language Of Science And Technology </p>
+          <p>ENGCMP 1102 Language Of Medicine </p>
+          <p>ENGCMP 1103 Public Relations Writing </p>
+          <p>ENGCMP 1104 Corporate Storytelling </p>
+          <p>ENGCMP 1111 Professional Writing In Global Contexts </p>
+          <p>ENGCMP 1112 Professional Uses Of Social Media </p>
+          <p>ENGCMP 1130 Projects In Digital Composition </p>
+          <p>ENGCMP 1150 Grammar And Copy-Editing </p>
+          <p>ENGCMP 1151 Professional Editing In Context </p>
+          <p>ENGCMP 1200 Advanced Topics In Composition </p>
+          <p>ENGCMP 1210 Tutoring Peer Writers </p>
+          <p>ENGCMP 1220 The Art Of The Essay </p>
+          <p>ENGCMP 1250 Advanced Topics Public/Professional Writing </p>
+          <p>ENGCMP 1270 Projects In Black Rhetoric </p>
+          <p>ENGCMP 1400 Grant Writing </p>
+          <p>ENGCMP 1401 Writing For Fundraising And Development </p>
+          <p>ENGCMP 1420 Writing Proposals For Business </p>
+          <p>ENGCMP 1510 Writing With Style </p>
+          <p>ENGCMP 1552 Language, Literacy, Learning</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
+            
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#elective">Elective</button>
+            <!-- Modal -->
+            <div class="modal fade" id="elective" tabindex="-1" role="dialog" aria-labelledby="electiveTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="electiveTitle">Electives</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>ENGCMP 0400 Written Professional Communication </p>
+        <p>ENGCMP 0401 Written Professional Communication: Topics In Diversity </p>
+        <p>ENGCMP 0410 Writing In The Legal Professions </p>
+        <p>ENGCMP 0412 Engineering Communication In A Professional Context</p>
+        <p>ENGCMP 0420 Writing For The Public </p>
+        <p>ENGCMP 0425 Digital Humanity </p>
+        <p>ENGCMP 0440 Critical Writing</p>
+        <p>ENGCMP 0450 Research Writing </p>
+        <p>ENGCMP 0500 Topics In Composition </p>
+        <p>ENGCMP 0510 Narratives Of The Workplace </p>
+        <p>ENGCMP 0515 Persausive Writing In Advertising </p>
+        <p>ENGCMP 0520 Integrating Writing And Design </p>
+        <p>ENGCMP 0530 Writing For The Sciences </p>
+        <p>ENGCMP 0535 Writing In The Health Science Professions </p>
+        <p>ENGCMP 0550 Topics In Public/Professional Writing </p>
+        <p>ENGCMP 0560 Writing Arguments </p>
+        <p>ENGCMP 0570 Topics In Black Rhetoric And Public Writing </p>
+        <p>ENGCMP 0600 Introduction To Technical Writing </p>
+        <p>ENGCMP 0610 Composing Digital Media </p>
+        <p>ENGCMP 0620 Theories Of Writing And Teaching </p>
+        <p>ENGCMP 0641 Writing For Change </p>
+        <p>ENGCMP 0712 Critical Making </p>
+        <p>ENGCMP 0905 Collegiate Reading</p>
+        <p>Any of the classes under the "1000 Level Courses" option</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>  
         </div>
       </div>
     </div>
@@ -83,7 +203,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Trying to decide what courses to take?</h2>
+          <h2>Just wanting to browse through the courses within ENGCMP?</h2>
           <p class="lead">If you would just like to browse, below is a comprehensive list of courses that includes:</p>
           <ul>
             <li>Course title</li>
@@ -100,8 +220,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Contact us</h2>
-          <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
+          <h2>Submit a course review</h2>
+          <p class="lead">Form goes here</p>
         </div>
       </div>
     </div>
