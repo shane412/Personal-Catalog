@@ -10,7 +10,11 @@ C. Quality - Allows students to have access to advising when necessary - Clear d
 
 D. Policy - Can be displayed on touch screens around PPW department (accessible and convenient) - Possible for use in other departments as well
 
-1. We have broken into teams of two in order to start tackling the 
+1. We broke into teams of two in order to start tackling the 
 first major 3 parts of the project: Home/Sample Schedule section, Requirement section, and 
 Recommended Courses section. Our goal is to get content together and start playing around with the
 styling.
+2. The design came from a Bootstrap template that we simplified for this project. We wanted it to be basic to not distract from the content.
+3. Requirement -
+4. Recommended - 
+5. Sample Schedule -
