@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
+  <!-- begin style================================================== -->
+  
+  <style>
+    body {
+      margin: 0;
+      min-width: 250px;
+    }
+    /* Include the padding and border in an element's total width and height */
+    * {
+      box-sizing: border-box;
+    }
+    /* Remove margins and padding from the list */
+    .list ul {
+      margin: 0;
+      padding: 0;
+    }
+    /* Style the list items */
+    .list ul li {
+      cursor: pointer;
+      position: relative;
+      padding: 12px 8px 12px 40px;
+      list-style-type: none;
+      background: #eee;
+      font-size: 18px;
+      transition: 0.2s;
+
+      /* make the list items unselectable */
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+    /* Set all odd list items to a different color (zebra-stripes) */
+    .list ul li:nth-child(odd) {
+      background: #f9f9f9;
+    }
+    /* Darker background-color on hover */
+    .list ul li:hover {
+      background: #BBDEFB;
+    }
+    /* When clicked on, add a background color and strike out text */
+    .list ul li.checked {
+      background: #888;
+      color: #fff;
+      /*text-decoration: line-through;*/
+    }
+    /* Add a "checked" mark when clicked on */
+    .list ul li.checked::before {
+      content: '';
+      position: absolute;
+      border-color: #fff;
+      border-style: solid;
+      border-width: 0 2px 2px 0;
+      top: 10px;
+      left: 16px;
+      transform: rotate(45deg);
+      height: 15px;
+      width: 7px;
+    }
+    /* Style the close button */
+    .close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 12px 16px 12px 16px;
+    }
+    .close:hover {
+      background-color: #f44336;
+      color: white;
+    }
+    /* Style the header */
+    .header {
+      background-color: #64B5F6;
+      padding: 30px 40px;
+      color: white;
+      text-align: center;
+    }
+    /* Clear floats after the header */
+    .header:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /* Style the input */
+    input {
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      width: 75%;
+      padding: 10px;
+      float: left;
+      font-size: 16px;
+    }
+  </style>
+  
+  <!-- end style =================================================== -->
+  <title>Virtual Advisor</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="images/1200px-University_of_Pittsburgh_seal.svg.png" width="8%" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h1> Bachelor of Science Degree in Civil Engineering Requirements </h1>
+      <p class="lead"> This checklist includes all required core courses, CEE electives, ENGR electives, humanity/social science electives, and senior design projects. </p>
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>What this checklist is</h2>
+          <p class="lead">This checklist allows you to keep track of your progress through the Civil Engineering program at the Swanson School of Engineering:</p>
+          <ul>
+            <li>Courses listed alphabetically by department </li>
+            <li>Toggleable checkmarks for each part of the section, which determine if you have completed the requirement</li>
+            <li>Example electives that complete the requirement are presented below each applicable section.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+     <!--section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About this page</h2>
+          <p class="lead">This is a great place to talk about your webpage. This template is purposefully unstyled so you can use it as a boilerplate or starting point for you own landing page designs! This template features:</p>
+          <ul>
+            <li>Clickable nav links that smooth scroll to page sections</li>
+            <li>Responsive behavior when clicking nav links perfect for a one page website</li>
+            <li>Bootstrap's scrollspy feature which highlights which section of the page you're on in the navbar</li>
+            <li>Minimal custom CSS so you are free to explore your own unique design options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section-->
+   
+
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row list">
+        <div class="col-lg-8 mx-auto">
+          <h2>Core Courses</h2>
+            <b>CEE: Civil Engineering Core Courses</b>
+            <ul id="myUL"> 
+              <li> CEE 1503: Intro to Environmental Engineering </li>
+              <li> CEE 0109: Computer Methods in Civil Engineering </li>
+              <li> CEE 1105: Materials of Construction </li>
+              <li> CEE 1330: Introduction to Structural Analysis  </li>
+              <li> CEE 1402: Fluid Mechanics </li>
+              <li> CEE 1811: Principles of Soil Mechanics </li>
+              <li> CEE 1703: Transportation Engineering </li>
+              <li> CEE 1200: Construction Management </li>
+              <li> CEE 1609: Life Cycle Assessment or CEE 1610: Engineering and Sustainable Development or CEE 1618: Design for the Environment </li>
+              <li> CEE 1412: Introduction to Water Resources Engineering </li>
+              <li> CEE 1085: Department Seminar </li>
+            </ul>
+            <b>CHEM: Chemistry Core Courses</b>
+            <ul> 
+              <li> CHEM 0960: General Chem for Engineers 1 </li>
+              <li> CHEM 0970: General Chem for Engineers 2 </li>
+           </ul> 
+            <b>ENGR: Engineering Core Courses </b>
+            <ul> 
+              <li> ENGR 0011: Intro to Engineering Analysis </li>
+              <li> ENGR 0081: Freshman Engineering Seminar 1 </li>
+              <li> ENGR 0082: Freshman Engineering Seminar 2 </li>
+              <li> ENGR 0012: Intro to Engineering Computing </li>
+              <li> ENGR 0131: Statics for Civil and Environmental Engineers </li>
+              <li> ENGR 0020: Probability and Statistics for Engineers 1 </li>
+              <li> ENGR 0141: Mechanics of Materials for Civil Engineers </li>
+              <li> ENGR 0151: Dynamics for Civil Engineers </li>
+              </ul> 
+            <b>ENGCMP: English Composition Core Courses </b>
+            <ul> 
+              <li> ENGCMP 0210: Seminar in Composition Writing </li>
+              <li> ENGCMP 0412: Engineering Communication in a Professional Context </li>
+              
+              </ul> 
+          
+            <b> IE: Industrial Engineering Core Classes </b>  
+            <ul> 
+              <li> IE 1040: Engineering Economic Analysis </li>
+            </ul> 
+            <b> MATH: Mathematics Core Courses </b>  
+            <ul> 
+              <li> MATH 0220: Analytic Geometry and Calculus 1 </li>
+              <li> MATH 0230: Analytic Geometry and Calculus 2 </li>
+              <li> MATH 0240: Analytic Geometry and Calculus 3 </li>
+              <li> MATH 0290: Differential Equations </li>
+             </ul> 
+            <b> PHYS: Physics Core Courses </b>  
+            <ul> 
+              <li> PHYS 0174: Basic Physics, Science, and Engineering 1 </li>
+              <li> PHYS 0175: Basic Physics, Science, and Engineering 2  </li>
+              <li> MATH 0240: Analytic Geometry and Calculus 3 </li>
+        
+             </ul> 
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row list">
+        <div class="col-lg-8 mx-auto">
+            <h2> CEE Elective Courses </h2> 
+            <ul> 
+              <li> CEE Elective #1 </li>
+              <li> CEE Elective #2 </li>
+              <li> CEE Elective #3 </li>
+              <li> CEE Elective #4 </li>
+              <li> CEE Elective #5 </li>
+             </ul> 
+            <p> CEE electives include any CEE course that is not already used to satisfy another requiremnt. </p>
+            
+     </div>
+      </div>
+    </div>
+  </section>
+    
+    <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row list">
+        <div class="col-lg-8 mx-auto">
+            
+             <h2> Hummanity/Social Science Elecives  </h2> 
+            <ul> 
+              <li> Hummanity/Social Science Elective #1 </li>
+              <li> Hummanity/Social Science Elective #2 </li>
+              <li> Hummanity/Social Science Elective #3 </li>
+              <li> Hummanity/Social Science Elective #4 </li>
+              <li> Hummanity/Social Science Elective #5 </li>
+             </ul> 
+            <form action = "https://www.engineering.pitt.edu/approved_elective_old/">
+            <input type = "submit" value="Click here to see approved electives" />
+            </form>
+            
+            </div>
+      </div>
+    </div>
+  </section>
+    
+    <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row list">
+        <div class="col-lg-8 mx-auto">
+            
+             <h2> ENGR Elective  </h2> 
+            <ul> 
+              <li> ENGR Elective </li>
+             
+             </ul> 
+            
+            <form action = "List of ENGR electives (1).pdf">
+            <input type = "submit" value="Click here to see approved electives" />
+            </form>
+            </div>
+      </div>
+    </div>
+  </section>
+    
+     
+    <section id="contact" class="bg-light">
+    <div class="container">
+      <div class="row list">
+        <div class="col-lg-8 mx-auto">
+            
+             <h2> Science Elective  </h2> 
+            <ul> 
+              <li> Science Elective </li>
+             
+             </ul> 
+            
+            <form action = "Science Electives.pdf">
+            <input type = "submit" value="Click here to see approved electives" />
+            </form>
+            </div>
+      </div>
+    </div>
+  </section>
+    
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; University of Pittsburgh 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+  <!-- Function ================================ -->
+  
+  <script>
+    // Add a "checked" symbol when clicking on a list item
+    var lists = document.querySelectorAll('ul');
+    var i;
+    for (i = 0; i < lists.length; i++) {
+      lists[i].addEventListener('click', function(ev) {
+          if (ev.target.tagName === 'LI') {
+            ev.target.classList.toggle('checked');
+          }
+      }, false);
+    }
+</script>
+  
+  <!-- end Function ============================ -->
+</body>
+</html>
