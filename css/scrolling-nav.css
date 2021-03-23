@@ -10,3 +10,25 @@ header {
 section {
   padding: 40px 0;
 }
+
+ul
+{
+    display: block;
+}
+
+img.swanson
+{
+    width: 200px;
+    height: auto;
+}
+
+ul li.nav-item
+{
+    display: block;
+}
+
+li.nav-item a
+{
+    float: left;
+}
+
